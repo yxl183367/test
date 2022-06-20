@@ -19,6 +19,6 @@ public class TestController {
         if("小明".equals(name)){
             return name;
         }
-        return "Error Hello word!!!";
+        return "Error!!!";
     }
 }
