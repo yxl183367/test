@@ -6,7 +6,7 @@ def test():
     try:
         url = 'http://localhost:8080/test'
         params = {
-            "name":"小明"
+            "name":"小明222"
         }
 
         rep = requests.post(url=url,data=params)
