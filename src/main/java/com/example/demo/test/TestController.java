@@ -12,13 +12,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
 
-
     @RequestMapping("/test")
-    public String test(@RequestParam String name) {
+    public String test(@RequestParam String name) throws Exception {
 
-        if("小明".equals(name)){
-            return name;
+        try {
+            if ("小明".equals(name)) {
+                return name;
+            }
+            String s = null;
+            if(s.equals("aaa")){
+                System.out.println("111111111111");
+            }
+
+        } catch (Exception e) {
+            throw new Exception(e.toString());
         }
-        return "Error!!!";
+        return "Hello word!!!";
+
     }
 }
