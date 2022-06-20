@@ -4,9 +4,9 @@ import requests
 
 def test():
     try:
-        url = 'http://localhost:8080/test'
+    url = 'http://localhost:8080/test'
         params = {
-            "name":"小明222"
+            "name":"小明"
         }
 
         rep = requests.post(url=url,data=params)
