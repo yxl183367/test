@@ -14,7 +14,7 @@ def test():
     try:
         if sul["code"] != "200":
             print("返回状态码异常")
-            raise Exception()
+
 
         return "执行成功"
     except:
