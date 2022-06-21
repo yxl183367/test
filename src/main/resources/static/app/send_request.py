@@ -12,7 +12,7 @@ def test():
     # 返回字符串数据
     sul = rep.json()
     try:
-        if sul["code"] == "200":
+        if sul["code"] != "200":
             print("返回状态码异常")
             raise Exception()
 
